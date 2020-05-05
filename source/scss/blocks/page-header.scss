@@ -177,6 +177,8 @@
   font-size: 1.2rem;
   line-height: 1.0418;
   color: $c-light;
+  opacity: 0;
+  animation: page-header-menu-appears 0.5s ease forwards;
 
   @media (min-width: $stop-scaling) {
     font-size: 12px;
@@ -246,11 +248,11 @@
       content: "";
       position: absolute;
       bottom: 0;
-      width: 100%;
       height: 2px;
       background-color: $c-light;
-      display: none;
-      left: 0;
+      width: 0;
+      right: 0;
+      transition: width 0.3s ease, background-color 0.3s linear;
 
       @media (min-width: $stop-scaling) {
         left: -5px;
@@ -272,7 +274,9 @@
 
     &.active {
       &::after {
-        display: block;
+        width: 100%;
+        left: 0;
+        right: 100%;
       }
     }
 
@@ -284,8 +288,17 @@
       &::after {
         opacity: 1;
         background-color: $c-purple;
+        width: 100%;
+        right: auto;
+        left: 0;
       }
     }
+  }
+}
+
+@keyframes page-header-menu-appears {
+  to {
+    opacity: 1;
   }
 }
 
