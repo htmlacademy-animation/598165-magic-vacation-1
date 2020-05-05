@@ -35,6 +35,9 @@
     background-color: $c-light;
     border: 2px solid $c-light;
     z-index: -1;
+    transition: all 0.3s;
+    animation: social-toggle-appears 0.3s cubic-bezier(0.3, 0.4, 0.6, 1.3) 0.5s
+      backwards;
   }
 
   svg {
@@ -81,6 +84,19 @@
   }
 }
 
+@keyframes social-toggle-appears {
+  from {
+    border-width: 0;
+    width: 0;
+    height: 0;
+  }
+
+  to {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .social-block__list {
   @include list-reset;
   position: absolute;
@@ -88,6 +104,7 @@
   right: 0;
   margin-top: 1.5rem;
   opacity: 0;
+  transition: opacity 0.3s;
   pointer-events: none;
 
   @media (min-width: $stop-scaling) {
@@ -169,6 +186,10 @@
   border: 2px solid transparent;
   border-radius: 50%;
 
+  .social-block--active & {
+    animation: socialreveal 0.3s linear both;
+  }
+
   @media (min-width: $stop-scaling) {
     width: 40px;
     height: 40px;
@@ -177,11 +198,19 @@
   @media (max-width: $tablet) and (orientation: portrait) {
     color: $c-light;
     background-color: $c-dark;
+
+    .social-block--active & {
+      animation: none;
+    }
   }
 
   @media (max-width: $mobile) and (orientation: landscape) {
     color: $c-light;
     background-color: $c-dark;
+
+    .social-block--active & {
+      animation: none;
+    }
   }
 
   &:hover {
@@ -207,6 +236,10 @@
   }
 
   &--fb {
+    .social-block--active & {
+      animation-delay: 0s;
+    }
+
     svg {
       width: 0.8rem;
       height: 1.7rem;
@@ -219,6 +252,10 @@
   }
 
   &--insta {
+    .social-block--active & {
+      animation-delay: 0.2s;
+    }
+
     svg {
       width: 1.5rem;
       height: 1.5rem;
@@ -231,6 +268,10 @@
   }
 
   &--vk {
+    .social-block--active & {
+      animation-delay: 0.4s;
+    }
+
     svg {
       width: 1.7rem;
       height: 1rem;
@@ -240,5 +281,17 @@
         height: 10px;
       }
     }
+  }
+}
+
+@keyframes socialreveal {
+  from {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
