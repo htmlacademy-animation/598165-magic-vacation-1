@@ -33,9 +33,9 @@
 .form__field {
   flex: none;
   margin-right: 3rem;
-  padding: 0;
+  padding: 0 5.6rem;
   height: 6rem;
-  width: 0;
+  width: calc(100% - 21rem);
   text-transform: uppercase;
   font: inherit;
   font-size: 2.4rem;
@@ -44,7 +44,12 @@
   border: 0;
   border-radius: 3rem;
   outline: none;
-  animation: form-field-appears 0.3s ease forwards;
+  transform-origin: 100%;
+
+  animation-name: form-field-in;
+  animation-duration: 0.35s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
 
   &:focus {
     border: 1px solid $c-purple;
@@ -80,15 +85,8 @@
   }
 }
 
-@keyframes form-field-appears {
-  to {
-    padding: 0 5.6rem;
-    flex-grow: 1;
-  }
-}
-
 .form__button {
-  // flex-grow: 1;
+  flex-grow: 1;
 
   @media (orientation: portrait) {
     position: relative;

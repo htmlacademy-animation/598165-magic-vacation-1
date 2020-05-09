@@ -95,15 +95,21 @@
   max-width: 34rem;
   font-size: 1.8rem;
   line-height: 2rem;
-  transform: translate(25px, 0);
-  opacity: 0;
 
   .swiper-slide-active & {
-    animation: no-transform 0.3s ease 0s both;
+    animation-name: slider-item-text-in;
+    animation-duration: 0.35s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
   }
 
   .swiper-slide-next & {
-    animation: no-transform 0.3s ease 0.2s both;
+
+    animation-name: slider-item-text-in;
+    animation-duration: 0.35s;
+    animation-timing-function: ease;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
   }
 
   @media (min-width: $stop-scaling) {
@@ -131,13 +137,6 @@
     min-height: 14rem;
     font-size: 1.4rem;
     line-height: 1.5rem;
-  }
-}
-
-@keyframes no-transform {
-  to {
-    transform: none;
-    opacity: 1;
   }
 }
 

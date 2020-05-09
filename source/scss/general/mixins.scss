@@ -58,3 +58,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* stylelint-disable */
+@function nth-delay($count) {
+  @return ($count - 1) * 0.2s;
+}
+/* stylelint-enable */

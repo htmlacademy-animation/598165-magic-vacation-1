@@ -177,8 +177,11 @@
   font-size: 1.2rem;
   line-height: 1.0418;
   color: $c-light;
-  opacity: 0;
-  animation: page-header-menu-appears 0.5s ease forwards;
+
+  animation-name: page-header-menu-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
 
   @media (min-width: $stop-scaling) {
     font-size: 12px;
@@ -252,7 +255,7 @@
       background-color: $c-light;
       width: 0;
       right: 0;
-      transition: width 0.3s ease, background-color 0.3s linear;
+      transition: width 0.35s ease, background-color 0.35s linear;
 
       @media (min-width: $stop-scaling) {
         left: -5px;
@@ -293,12 +296,6 @@
         left: 0;
       }
     }
-  }
-}
-
-@keyframes page-header-menu-appears {
-  to {
-    opacity: 1;
   }
 }
 
