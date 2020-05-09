@@ -178,6 +178,11 @@
   line-height: 1.0418;
   color: $c-light;
 
+  animation-name: page-header-menu-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+
   @media (min-width: $stop-scaling) {
     font-size: 12px;
   }
@@ -246,11 +251,11 @@
       content: "";
       position: absolute;
       bottom: 0;
-      width: 100%;
       height: 2px;
       background-color: $c-light;
-      display: none;
-      left: 0;
+      width: 0;
+      right: 0;
+      transition: width 0.35s ease, background-color 0.35s linear;
 
       @media (max-width: $tablet) and (orientation: portrait) {
         left: 0;
@@ -267,7 +272,9 @@
 
     &.active {
       &::after {
-        display: block;
+        width: 100%;
+        left: 0;
+        right: 100%;
       }
     }
 
@@ -279,6 +286,9 @@
       &::after {
         opacity: 1;
         background-color: $c-purple;
+        width: 100%;
+        right: auto;
+        left: 0;
       }
     }
   }
