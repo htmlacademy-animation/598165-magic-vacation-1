@@ -188,11 +188,16 @@
   font-size: 1.2rem;
   line-height: 1.0418;
   color: $c-light;
+  opacity: 0;
 
-  animation-name: page-header-menu-in;
-  animation-duration: 0.5s;
-  animation-timing-function: ease;
-  animation-fill-mode: both;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 0.6, 0.35, 1);
+  transition-delay: 0.5s;
+
+  .loaded & {
+    opacity: 1;
+  }
 
   @media (min-width: $stop-scaling) {
     font-size: 12px;
