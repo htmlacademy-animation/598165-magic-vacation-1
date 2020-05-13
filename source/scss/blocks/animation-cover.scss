@@ -1,0 +1,19 @@
+.animation-cover {
+  position: absolute;
+  height: 0%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: $c-dark;
+
+  .screen--intro.screen--hidden ~ & {
+    height: 100%;
+    transition-property: height;
+    transition-duration: 0.35s;
+  }
+
+  .screen--story.active ~ & {
+    height: 0%;
+  }
+}
