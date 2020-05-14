@@ -305,6 +305,15 @@
   background-size: cover;
   background-position: center;
 
+  .screen--hidden + &.screen--hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+  }
+
   @media (orientation: portrait) {
     background-size: auto calc(100vh - 13.8rem), 100% 25rem;
     background-position: top center, bottom center;
@@ -317,7 +326,7 @@
 
 .screen--game {
   position: relative;
-  background-color: $c-dark;
+  // background-color: $c-dark;
 
   &::before {
     content: "";
@@ -351,7 +360,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: $c-dark;
+  // background-color: $c-dark;
   opacity: 0;
   pointer-events: none;
 
@@ -361,6 +370,6 @@
   }
 }
 
-.screen--rules {
-  background-color: $c-dark;
-}
+// .screen--rules {
+//   background-color: $c-dark;
+// }
