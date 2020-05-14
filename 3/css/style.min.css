@@ -1016,12 +1016,12 @@ img {
   right: 0;
   bottom: 0;
   background-color: #5f458c; }
-  .screen--intro.screen--hidden ~ .animation-cover {
+  .screen--prizes.active ~ .animation-cover,
+  .screen--rules.active ~ .animation-cover,
+  .screen--game.active ~ .animation-cover {
     height: 100%;
     transition-property: height;
     transition-duration: 0.35s; }
-  .screen--story.active ~ .animation-cover {
-    height: 0%; }
 
 .animation-screen {
   position: fixed;
@@ -2911,14 +2911,20 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  .screen--hidden + .screen--story.screen--hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0; }
   @media (orientation: portrait) {
     .screen--story {
       background-size: auto calc(100vh - 13.8rem), 100% 25rem;
       background-position: top center, bottom center; } }
 
 .screen--game {
-  position: relative;
-  background-color: #5f458c; }
+  position: relative; }
   .screen--game::before {
     content: "";
     position: absolute;
@@ -2946,15 +2952,11 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #5f458c;
   opacity: 0;
   pointer-events: none; }
   .screen--result.screen--show {
     opacity: 1;
     pointer-events: auto; }
-
-.screen--rules {
-  background-color: #5f458c; }
 
 .slider {
   position: relative;
