@@ -1,17 +1,21 @@
 .animation-cover {
   position: absolute;
-  height: 0%;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+
+  transform: scaleY(0);
+  transform-origin: 0 100%;
 
   background-color: $c-dark;
 
   .screen--prizes.active ~ &,
   .screen--rules.active ~ &,
   .screen--game.active ~ & {
-    height: 100%;
-    transition-property: height;
-    transition-duration: 0.35s;
+    transform: scaleY(1);
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
   }
 }
