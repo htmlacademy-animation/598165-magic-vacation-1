@@ -44,3 +44,26 @@
   }
 }
 
+@keyframes rules-item-text-in {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes rules-item-counter-in {
+  from {
+    transform: scale(0);
+    color: $c-purple;
+  }
+
+  to {
+    transform: none;
+    color: #ffffff;
+  }
+}

@@ -286,14 +286,6 @@
       }
     }
 
-    &.active {
-      &::after {
-        width: 100%;
-        left: 0;
-        right: 100%;
-      }
-    }
-
     &:hover,
     &:focus {
       color: $c-purple;
@@ -305,6 +297,15 @@
         width: 100%;
         right: auto;
         left: 0;
+      }
+    }
+
+    .loaded &.active {
+      &::after {
+        width: 100%;
+        left: 0;
+        right: auto;
+        transition-delay: 1s;
       }
     }
   }
