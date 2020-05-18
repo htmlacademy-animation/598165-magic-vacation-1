@@ -62,4 +62,28 @@
 @function nth-delay($count) {
   @return ($count - 1) * 0.2s;
 }
+
+@mixin delay($count, $value) {
+  @for $i from 1 to ($count + 1) {
+    &:nth-child(#{$i}) {
+      animation-delay: (#{$i*$value});
+    }
+  }
+}
+
+@mixin rulesItemDelay($count) {
+  $initialDelay: 1000ms;
+
+  @for $i from 1 to ($count + 1) {
+    &:nth-child(#{$i})::before {
+      animation-delay: (#{$initialDelay + (($i - 1) * 200ms)});
+    }
+
+    &:nth-child(#{$i}) p {
+      animation-delay: (#{$initialDelay + ($i * 150ms)});
+    }
+  }
+}
+
 /* stylelint-enable */
+
