@@ -11,7 +11,7 @@ export default () => {
   setTimeout(() => titleAnimation.runAnimation(), 0);
 
 
-  const hideRulesLinkButton = (mutationList) => {
+  const resetAnimation = (mutationList) => {
     for (let mutation of mutationList) {
       if (mutation.type === `attributes` && mutation.attributeName === `class`) {
         if (!mutation.target.classList.contains(`active`)) {
@@ -24,44 +24,10 @@ export default () => {
     }
   };
 
-  const rulesScreenObserver = new MutationObserver(hideRulesLinkButton);
+  const rulesScreenObserver = new MutationObserver(resetAnimation);
   rulesScreenObserver.observe(screenRules, {attributes: true});
 
   lastRulesItem.addEventListener(`animationstart`, () => {
     setTimeout(() => rulesLinkButton.classList.add(`rules__link--visible`), 233);
   });
 };
-
-
-// export default () => {
-//   const screenIntro = document.querySelector(`.screen--intro`);
-
-//   const headerAnimation =
-//     new AnimatedTypography(`.intro__title`, 500, `active`, `transform`);
-//   const dateAnimation =
-//     new AnimatedTypography(`.intro__date`, 300, `active`, `transform`, false);
-
-//   headerAnimation.init();
-//   dateAnimation.init();
-
-//   const destroyHeaderAnimation = (mutationList) => {
-//     for (let mutation of mutationList) {
-//       if (mutation.type === `attributes` && mutation.attributeName === `class`) {
-//         if (!mutation.target.classList.contains(`active`)) {
-//           headerAnimation.destroyAnimation();
-//           dateAnimation.destroyAnimation();
-//         } else {
-//           setTimeout(() => headerAnimation.runAnimation(), 300);
-//           setTimeout(() => dateAnimation.runAnimation(), 1667);
-//         }
-//       }
-//     }
-//   };
-
-//   const introScreenObserver = new MutationObserver(destroyHeaderAnimation);
-//   introScreenObserver.observe(screenIntro, {attributes: true});
-
-//   setTimeout(() => headerAnimation.runAnimation(), 300);
-//   setTimeout(() => dateAnimation.runAnimation(), 1667);
-// };
-

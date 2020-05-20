@@ -31,4 +31,3 @@ export default () => {
   setTimeout(() => headerAnimation.runAnimation(), 300);
   setTimeout(() => dateAnimation.runAnimation(), 1667);
 };
-
