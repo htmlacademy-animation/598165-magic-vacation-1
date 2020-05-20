@@ -53,18 +53,6 @@
   }
 }
 
-@keyframes rules-lead-in {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-
 .rules__lead {
   margin-left: 5.8rem;
   max-width: 96rem;
@@ -220,12 +208,15 @@
   right: 5.6rem;
   color: rgba(95, 69, 140, 0);
   transition: color 200ms 300ms;
+  border-radius: 3.5rem;
+  overflow: hidden;
 
   &--visible {
     color: rgba(95, 69, 140, 1);
   }
 
   &::before {
+    border-radius: 0;
     transform: translate(-50%, -50%) scaleX(0);
     transform-origin: 100% 50%;
   }

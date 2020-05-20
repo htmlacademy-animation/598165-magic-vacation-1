@@ -35,6 +35,7 @@
 
   @media (min-width: $stop-scaling) {
     max-width: 990px;
+
     font-size: 120px;
   }
 
@@ -147,6 +148,10 @@
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.2;
+  animation-name: intro-label-in;
+  animation-duration: 350ms;
+  animation-fill-mode: both;
+  animation-delay: 1867ms;
 
   @media (min-width: $stop-scaling) {
     margin: 0 0 16px;

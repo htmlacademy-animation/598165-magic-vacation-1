@@ -1,0 +1,45 @@
+.word-animation {
+  display: inline-block;
+  overflow: hidden;
+  margin-top: -0.1648em;
+  margin-bottom: -0.22em;
+}
+
+
+.Т + .А {
+  margin-left: -0.08em;
+}
+
+.С + .Т {
+  margin-left: -0.044em;
+}
+
+.О + .Т {
+  margin-left: -0.044em;
+}
+
+.У + .С {
+  margin-left: -0.044em;
+}
+
+.word-animation > span {
+  transform: translate3d(0, 1.17em, 0);
+  display: inline-block;
+  padding-top: 0.1648em;
+}
+
+.intro__title.active .word-animation > span {
+  transform: translate3d(0, 0, 0);
+}
+
+.intro__date .word-animation {
+  margin-right: 0.2em;
+}
+
+.intro__date.active .word-animation > span {
+  transform: translate3d(0, 0, 0);
+}
+
+.rules__title.active .word-animation > span {
+  transform: translate3d(0, 0, 0);
+}
