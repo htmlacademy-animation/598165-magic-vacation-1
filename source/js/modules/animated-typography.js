@@ -1,39 +1,26 @@
 export default class AnimatedTypography {
-  constructor(elementSelector, duration, classForActivate, property, splitWords = true) {
-    this._DELAY_DELTA = 50;
-    this._WORD_DELAY = 300;
+  constructor(elementSelector, duration, classForActivate, property, isSpitting = true) {
+    this._LETTER_DELAY = 70;
+    this._WORD_DELAY = 350;
     this._duration = duration;
     this._classForActivate = classForActivate;
     this._property = property;
-    this._splitWords = splitWords;
+    this._isSpitting = isSpitting;
 
     this._element = document.querySelector(elementSelector);
     this._words = [];
   }
 
-  init() {
-    if (!this._element) {
-      return;
-    }
-    if (this._splitWords) {
-      this.splitWords();
-    } else {
-      this._words.push(this._element.textContent.trim());
-    }
-    this.prepareText();
-  }
-
-  prepareLetter(letter, letterNumber, wordDelay) {
+  _prepareLetter(letter, letterNumber, wordDelay) {
     const span = document.createElement(`span`);
     span.textContent = letter;
     if (letter === ` `) {
       span.style.width = `0.2em`;
     } else {
-      span.classList.add(letter.toUpperCase());
 
       let delay = (letterNumber) % 2 ?
-        this._DELAY_DELTA * (letterNumber + 1) + wordDelay :
-        this._DELAY_DELTA * (letterNumber - 1) + wordDelay;
+        this._LETTER_DELAY * (letterNumber + 1) + wordDelay :
+        this._LETTER_DELAY * (letterNumber - 1) + wordDelay;
 
       delay = delay < 0 ? 0 : delay;
 
@@ -42,17 +29,17 @@ export default class AnimatedTypography {
     return span;
   }
 
-  splitWords() {
+  _splitWords() {
     this._words = this._element.textContent
       .trim().split(` `).filter((word) => word !== ``);
   }
 
-  prepareText() {
+  _prepareText() {
     const content = this._words.reduce((parentFragment, word, wordNumber) => {
       const wordDelay = wordNumber * this._WORD_DELAY;
 
       const wordElement = [...word].reduce((fragment, letter, number) => {
-        fragment.appendChild(this.prepareLetter(letter, number, wordDelay));
+        fragment.appendChild(this._prepareLetter(letter, number, wordDelay));
         return fragment;
       }, document.createDocumentFragment());
 
@@ -66,6 +53,18 @@ export default class AnimatedTypography {
 
     this._element.innerHTML = ``;
     this._element.appendChild(content);
+  }
+
+  init() {
+    if (!this._element) {
+      return;
+    }
+    if (this._isSpitting) {
+      this._splitWords();
+    } else {
+      this._words.push(this._element.textContent.trim());
+    }
+    this._prepareText();
   }
 
   runAnimation() {
