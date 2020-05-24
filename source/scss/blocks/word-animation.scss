@@ -5,22 +5,28 @@
   margin-bottom: -0.22em;
 }
 
+// Кернинг букв
 
-.Т + .А {
+// Т/А в слове "Таинственный"
+.word-animation:nth-child(1) > span:nth-child(2) {
   margin-left: -0.08em;
 }
 
-.С + .Т {
+// С/Т в слове "Таинственный"
+.word-animation:nth-child(1) > span:nth-child(6) {
+  margin-left: -0.08em;
+}
+
+// О/Т в слове "отпуск"
+.word-animation:nth-child(2) > span:nth-child(2) {
   margin-left: -0.044em;
 }
 
-.О + .Т {
+// У/С в слове "отпуск"
+.word-animation:nth-child(2) > span:nth-child(5) {
   margin-left: -0.044em;
 }
 
-.У + .С {
-  margin-left: -0.044em;
-}
 
 .word-animation > span {
   transform: translate3d(0, 1.17em, 0);

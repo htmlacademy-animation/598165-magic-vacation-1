@@ -29,7 +29,7 @@ export default class AnimatedTypography {
     if (letter === ` `) {
       span.style.width = `0.2em`;
     } else {
-      span.classList.add(letter.toUpperCase());
+      // span.classList.add(letter.toUpperCase());
 
       let delay = (letterNumber) % 2 ?
         this._DELAY_DELTA * (letterNumber + 1) + wordDelay :
