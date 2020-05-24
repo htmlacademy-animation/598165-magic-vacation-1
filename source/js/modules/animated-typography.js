@@ -1,6 +1,6 @@
 export default class AnimatedTypography {
   constructor(elementSelector, duration, classForActivate, property, splitWords = true) {
-    this._DELAY_DELTA = 50;
+    this._LETTER_DELAY = 50;
     this._WORD_DELAY = 300;
     this._duration = duration;
     this._classForActivate = classForActivate;
@@ -29,11 +29,10 @@ export default class AnimatedTypography {
     if (letter === ` `) {
       span.style.width = `0.2em`;
     } else {
-      // span.classList.add(letter.toUpperCase());
 
       let delay = (letterNumber) % 2 ?
-        this._DELAY_DELTA * (letterNumber + 1) + wordDelay :
-        this._DELAY_DELTA * (letterNumber - 1) + wordDelay;
+        this._LETTER_DELAY * (letterNumber + 1) + wordDelay :
+        this._LETTER_DELAY * (letterNumber - 1) + wordDelay;
 
       delay = delay < 0 ? 0 : delay;
 
