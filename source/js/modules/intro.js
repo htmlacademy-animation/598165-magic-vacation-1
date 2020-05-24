@@ -4,9 +4,9 @@ export default () => {
   const screenIntro = document.querySelector(`.screen--intro`);
 
   const headerAnimation =
-    new AnimatedTypography(`.intro__title`, 500, `active`, `transform`);
+    new AnimatedTypography(`.intro__title`, 250, `active`, `transform`);
   const dateAnimation =
-    new AnimatedTypography(`.intro__date`, 300, `active`, `transform`, false);
+    new AnimatedTypography(`.intro__date`, 200, `active`, `transform`, false);
 
   headerAnimation.init();
   dateAnimation.init();
