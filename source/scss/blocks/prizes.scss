@@ -127,10 +127,14 @@
   }
 
   &--journeys {
+    animation-name: primary-prize-in;
+    animation-duration: 767ms;
+    animation-fill-mode: both;
+    animation-delay: 3500ms;
+
     .prizes__icon {
       position: relative;
       left: -5.9rem;
-      bottom: -1.4rem;
       width: 26.8rem;
 
       @media (min-width: $stop-scaling) {
@@ -157,6 +161,7 @@
   }
 
   &--cases {
+    visibility: hidden;
     margin-left: 7rem;
 
     @media (min-width: $stop-scaling) {
@@ -166,6 +171,7 @@
     @media (max-width: $tablet) and (orientation: portrait) {
       margin-left: 0;
       padding-left: 1.5rem;
+      visibility: visible;
     }
 
     .prizes__icon {
@@ -191,8 +197,11 @@
   }
 
   &--codes {
+    visibility: hidden;
+
     @media (max-width: $tablet) and (orientation: portrait) {
       padding-left: 0.8rem;
+      visibility: visible;
     }
 
     .prizes__icon {
@@ -218,6 +227,9 @@
 }
 
 .prizes__icon {
+  animation-name: prize-icon-in;
+  animation-duration: 367ms;
+
   @media (max-width: $tablet) and (orientation: portrait) {
     margin-right: 3.8rem;
   }
@@ -265,6 +277,8 @@
     font-weight: 400;
     font-size: 12rem;
     line-height: 0.55;
+    animation-name: prize-figure-in;
+    animation-duration: 67ms;
 
     @media (min-width: $stop-scaling) {
       font-size: 120px;
@@ -289,6 +303,9 @@
     align-items: flex-end;
     margin-left: 1.4rem;
     max-width: 14rem;
+    animation-name: prize-text-in;
+    animation-duration: 667ms;
+    animation-timing-function: cubic-bezier(0.19, 0.24, 0.21, 1);
 
     @media (min-width: $stop-scaling) {
       margin-left: 14px;
