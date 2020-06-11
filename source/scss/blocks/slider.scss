@@ -171,7 +171,7 @@
   height: 4rem;
   color: $c-dark;
 
-  transform: translateX(-60px) rotate(-180deg);
+  transform: translateX(-6rem) rotate(-180deg);
 
   animation-name: slider-control-in;
   animation-duration: 500ms;
@@ -180,7 +180,7 @@
   animation-timing-function: cubic-bezier(0.5, 0.5, 0.6, 1.5);
 
   &--next {
-    transform: translateX(60px) rotate(180deg);
+    transform: translateX(6rem) rotate(180deg);
   }
 
   @media (min-width: $stop-scaling) {
