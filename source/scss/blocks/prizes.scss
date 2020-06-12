@@ -137,6 +137,14 @@
       left: -5.9rem;
       width: 26.8rem;
 
+      img {
+        visibility: hidden;
+
+        .active & {
+          visibility: visible;
+        }
+      }
+
       @media (min-width: $stop-scaling) {
         left: -59px;
         bottom: -14px;
