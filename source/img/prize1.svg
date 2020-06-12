@@ -57,7 +57,7 @@
       type="translate"
       values="-10,6; 0,0; -10,6"
       keySplines="0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
-      calcMode="splines"
+      calcMode="spline"
       dur="2s"
       repeatCount="indefinite"/>
 
@@ -72,7 +72,7 @@
       type="skewX"
       values="4; 0; 4"
       keySplines="0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
-      calcMode="splines"
+      calcMode="spline"
       dur="2s"
       additive="sum"
       repeatCount="indefinite"/>
@@ -108,7 +108,7 @@
       type="translate"
       values="0,3; 0,-3; 0,3;"
       keySplines="0.6, 0, 0.4, 1; 0.6, 0, 0.4, 1"
-      calcMode="splines"
+      calcMode="spline"
       fill="freeze"
       dur="2s"
       repeatCount="indefinite"/>
@@ -153,7 +153,7 @@
         M 91.4 116.7 C 108.1 112.4 136.2 104.4 164.4 104.4 C 208.9 104.4 237.5 113.1 237.8 121 C 237.8 121.2 237.8 121.3 237.8 121.5 C 236.9 129.4 208.4 134.3 164.3 134.3 C 136.1 134.3 108.1 129.9 91.4 125.7 C 87.6 124.7 85.6 123.2 85.4 121.6 L 85.4 121.1 C 85.5 119.4 87.5 117.7 91.5 116.7"
         dur="2s"
         keySplines="0.6, 0, 0.4, 1; 0.6, 0, 0.4, 1"
-        calcMode="splines"
+        calcMode="spline"
         repeatCount="indefinite"/>
       </path>
     </g>
@@ -163,7 +163,7 @@
       type="translate"
       values="0,-3; 0,3; 0,-3"
       keySplines="0.6, 0, 0.4, 1; 0.6, 0, 0.4, 1"
-      calcMode="splines"
+      calcMode="spline"
       fill="freeze"
       dur="2s"
       repeatCount="indefinite"/>
@@ -257,7 +257,7 @@
     dur="300ms"
     begin="2.9s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"/>
 
     <animateTransform attributeName="transform"
@@ -267,7 +267,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"/>
 
     <animateTransform attributeName="transform"
@@ -293,7 +293,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"/>
 
     <animateTransform
@@ -303,7 +303,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"/>
 
     <animateTransform attributeName="transform"
@@ -313,7 +313,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"
     additive="sum"/>
 
@@ -359,7 +359,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"/>
 
     <animateTransform attributeName="transform"
@@ -369,7 +369,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"
     additive="sum"/>
 
@@ -378,9 +378,9 @@
     values="5 118 258; -2.5 118 258; 1.2 118 258; 0 118 258;  0 118 258; 5 118 258"
     dur="3.1s"
     begin="3.2s"
-    keySplines="0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1; 0, 0.67, 1; 0.33, 0, 0.67, 1"
+    keySplines="0.33, 0, 0.67, 1 ; 0.33, 0, 0.67, 1 ; 0.33, 0, 0.67, 1 ; 0.33, 0, 0.67, 1 ; 0.33, 0, 0.67, 1"
     keyTimes="0; 0.11; 0.22; 0.33; 0.9; 1"
-    calcMode="splines"
+    calcMode="spline"
     repeatCount="indefinite"
     additive="sum"/>
 
