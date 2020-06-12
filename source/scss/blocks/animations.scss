@@ -68,7 +68,6 @@
   }
 }
 
-
 @keyframes rules-lead-in {
   from {
     transform: translateY(2rem);
@@ -99,5 +98,47 @@
   100% {
     transform: none;
     opacity: 1;
+  }
+}
+
+@keyframes primary-prize-in {
+  0% {
+    transform: translate(330px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes prize-icon-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes prize-figure-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes prize-text-in {
+  0% {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
