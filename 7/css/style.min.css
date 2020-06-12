@@ -2172,6 +2172,10 @@ img {
       position: relative;
       left: -5.9rem;
       width: 26.8rem; }
+      .prizes__item--journeys .prizes__icon img {
+        visibility: hidden; }
+        .active .prizes__item--journeys .prizes__icon img {
+          visibility: visible; }
       @media (min-width: 2000px) {
         .prizes__item--journeys .prizes__icon {
           left: -59px;

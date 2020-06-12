@@ -10560,6 +10560,41 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/js/modules/prizes.js":
+/*!*************************************!*\
+  !*** ./source/js/modules/prizes.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (() => {
+  const screenPrizes = document.querySelector(`.screen--prizes`);
+  const journeysImg = document.querySelector(`.prizes__item--journeys img`);
+
+  const originalJourneysImgSrc = journeysImg.src;
+
+  const resetAnimation = (mutationsList) => {
+    for (let mutation of mutationsList) {
+      if (mutation.type === `attributes` && mutation.attributeName === `class`) {
+        if (!mutation.target.classList.contains(`active`)) {
+          journeysImg.src = originalJourneysImgSrc;
+        } else {
+          journeysImg.src = `${originalJourneysImgSrc}#${new Date().getTime()}`;
+        }
+      }
+    }
+  };
+
+  const prizesScreenObserver = new MutationObserver(resetAnimation);
+  prizesScreenObserver.observe(screenPrizes, {attributes: true});
+
+});
+
+
+/***/ }),
+
 /***/ "./source/js/modules/result.js":
 /*!*************************************!*\
   !*** ./source/js/modules/result.js ***!
@@ -10790,7 +10825,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_full_page_scroll__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/full-page-scroll */ "./source/js/modules/full-page-scroll.js");
 /* harmony import */ var _modules_intro__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/intro */ "./source/js/modules/intro.js");
 /* harmony import */ var _modules_rules__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/rules */ "./source/js/modules/rules.js");
+/* harmony import */ var _modules_prizes__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/prizes */ "./source/js/modules/prizes.js");
 // modules
+
 
 
 
@@ -10815,6 +10852,7 @@ Object(_modules_form_js__WEBPACK_IMPORTED_MODULE_6__["default"])();
 Object(_modules_social_js__WEBPACK_IMPORTED_MODULE_7__["default"])();
 
 Object(_modules_intro__WEBPACK_IMPORTED_MODULE_9__["default"])();
+Object(_modules_prizes__WEBPACK_IMPORTED_MODULE_11__["default"])();
 Object(_modules_rules__WEBPACK_IMPORTED_MODULE_10__["default"])();
 
 const fullPageScroll = new _modules_full_page_scroll__WEBPACK_IMPORTED_MODULE_8__["default"]();
