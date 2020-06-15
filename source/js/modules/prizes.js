@@ -1,17 +1,25 @@
 export default () => {
   const screenPrizes = document.querySelector(`.screen--prizes`);
-  const journeysImg = document.querySelector(`.prizes__item--journeys img`);
+  const prizesImages = document.querySelectorAll(`.prizes__item img`);
 
-  const originalJourneysImgSrc = journeysImg.src;
-  journeysImg.src = `#`;
+  const originalSources = [];
+  prizesImages.forEach((img) => {
+    originalSources.push(img.src);
+    img.src = `#`;
+  });
+
 
   const resetAnimation = (mutationsList) => {
     for (let mutation of mutationsList) {
       if (mutation.type === `attributes` && mutation.attributeName === `class`) {
         if (!mutation.target.classList.contains(`active`)) {
-          journeysImg.src = `#`;
+          prizesImages.forEach((img) => {
+            img.src = `#`;
+          });
         } else {
-          journeysImg.src = `${originalJourneysImgSrc}?${new Date().getTime()}`;
+          prizesImages.forEach((img, i) => {
+            img.src = `${originalSources[i]}?${new Date().getTime()}`;
+          });
         }
       }
     }

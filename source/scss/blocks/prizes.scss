@@ -137,14 +137,6 @@
       left: -5.9rem;
       width: 26.8rem;
 
-      img {
-        visibility: hidden;
-
-        .active & {
-          visibility: visible;
-        }
-      }
-
       @media (min-width: $stop-scaling) {
         left: -59px;
         bottom: -14px;
@@ -169,7 +161,6 @@
   }
 
   &--cases {
-    visibility: hidden;
     margin-left: 7rem;
 
     @media (min-width: $stop-scaling) {
@@ -183,7 +174,11 @@
     }
 
     .prizes__icon {
-      width: 18.8rem;
+      width: 31.8rem;
+      margin-left: -7em;
+      animation-name: prize-icon-in;
+      animation-delay: 3600ms;
+      animation-duration: 367ms;
 
       @media (min-width: $stop-scaling) {
         width: 188px;
@@ -192,9 +187,11 @@
       @media (max-width: $tablet) and (orientation: portrait) {
         margin-right: 1.3rem;
         width: 10.211rem;
+        margin-left: 0;
       }
 
       @media (max-width: $tablet) and (orientation: landscape) {
+        margin-left: 0;
         width: 9.5rem;
       }
 
@@ -287,6 +284,11 @@
     line-height: 0.55;
     animation-name: prize-figure-in;
     animation-duration: 67ms;
+    animation-fill-mode: both;
+
+    .prizes__item--cases & {
+      animation-delay: 5000ms;
+    }
 
     @media (min-width: $stop-scaling) {
       font-size: 120px;
@@ -313,7 +315,12 @@
     max-width: 14rem;
     animation-name: prize-text-in;
     animation-duration: 667ms;
+    animation-fill-mode: both;
     animation-timing-function: cubic-bezier(0.19, 0.24, 0.21, 1);
+
+    .prizes__item--cases & {
+      animation-delay: 5000ms;
+    }
 
     @media (min-width: $stop-scaling) {
       margin-left: 14px;
