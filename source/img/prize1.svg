@@ -57,7 +57,7 @@
       type="translate"
       values="-10,6; 0,0; -10,6"
       keySplines="0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
-      calcMode="splines"
+      calcMode="spline"
       dur="2s"
       repeatCount="indefinite"/>
 
@@ -72,7 +72,7 @@
       type="skewX"
       values="4; 0; 4"
       keySplines="0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
-      calcMode="splines"
+      calcMode="spline"
       dur="2s"
       additive="sum"
       repeatCount="indefinite"/>
@@ -108,7 +108,7 @@
       type="translate"
       values="0,3; 0,-3; 0,3;"
       keySplines="0.6, 0, 0.4, 1; 0.6, 0, 0.4, 1"
-      calcMode="splines"
+      calcMode="spline"
       fill="freeze"
       dur="2s"
       repeatCount="indefinite"/>
@@ -153,7 +153,7 @@
         M 91.4 116.7 C 108.1 112.4 136.2 104.4 164.4 104.4 C 208.9 104.4 237.5 113.1 237.8 121 C 237.8 121.2 237.8 121.3 237.8 121.5 C 236.9 129.4 208.4 134.3 164.3 134.3 C 136.1 134.3 108.1 129.9 91.4 125.7 C 87.6 124.7 85.6 123.2 85.4 121.6 L 85.4 121.1 C 85.5 119.4 87.5 117.7 91.5 116.7"
         dur="2s"
         keySplines="0.6, 0, 0.4, 1; 0.6, 0, 0.4, 1"
-        calcMode="splines"
+        calcMode="spline"
         repeatCount="indefinite"/>
       </path>
     </g>
@@ -163,7 +163,7 @@
       type="translate"
       values="0,-3; 0,3; 0,-3"
       keySplines="0.6, 0, 0.4, 1; 0.6, 0, 0.4, 1"
-      calcMode="splines"
+      calcMode="spline"
       fill="freeze"
       dur="2s"
       repeatCount="indefinite"/>
@@ -257,7 +257,7 @@
     dur="300ms"
     begin="2.9s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"/>
 
     <animateTransform attributeName="transform"
@@ -267,7 +267,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"/>
 
     <animateTransform attributeName="transform"
@@ -293,7 +293,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"/>
 
     <animateTransform
@@ -303,7 +303,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"/>
 
     <animateTransform attributeName="transform"
@@ -313,7 +313,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"
     additive="sum"/>
 
@@ -359,7 +359,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"/>
 
     <animateTransform attributeName="transform"
@@ -369,7 +369,7 @@
     dur="467ms"
     begin="2.73s"
     keySplines="0.33, 0, 0, 1"
-    calcMode="splines"
+    calcMode="spline"
     fill="freeze"
     additive="sum"/>
 
@@ -378,9 +378,9 @@
     values="5 118 258; -2.5 118 258; 1.2 118 258; 0 118 258;  0 118 258; 5 118 258"
     dur="3.1s"
     begin="3.2s"
-    keySplines="0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1; 0, 0.67, 1; 0.33, 0, 0.67, 1"
+    keySplines="0.33, 0, 0.67, 1 ; 0.33, 0, 0.67, 1 ; 0.33, 0, 0.67, 1 ; 0.33, 0, 0.67, 1 ; 0.33, 0, 0.67, 1"
     keyTimes="0; 0.11; 0.22; 0.33; 0.9; 1"
-    calcMode="splines"
+    calcMode="spline"
     repeatCount="indefinite"
     additive="sum"/>
 
@@ -412,7 +412,7 @@
   </g>
 
   <path id="windowOneAnimated" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-  d="M163.5,162.4h-2.1c-1.9,0-3.4,1.6-3.4,3.4v2.9c0,1.9,1.5,3.4,3.4,3.4h2.1c1.9,0,3.4-1.6,3.4-3.4v-2.9C166.9,164,165.4,162.4,163.5,162.4L163.5,162.4z">
+  d="M 161.4 162.4 L 161.4 162.4 L 163.5 162.4 C 165.4 162.4 166.9 163.9 166.9 165.8 L 166.9 168.7 C 166.9 170.5 165.4 172.1 163.5 172.1 L 161.4 172.1 C 159.5 172.1 158 170.6 158 168.7 L 158 165.8 C 158 164 159.5 162.4 161.4 162.4">
 
     <set attributeType="CSS"
     attributeName="opacity"
@@ -420,8 +420,8 @@
     dur="2.5s"/>
 
     <animate attributeName="d"
-    values="M 163.5 172.1 C 165.4 172.1 166.9 170.5 166.9 168.7 C 166.9 167.733 166.9 166.767 166.9 165.8 C 166.9 164 165.4 162.4 163.5 162.4 L 163.5 162.4 C 163.5 162.4 163.5 162.4 163.5 162.4 L 161.4 162.4 C 159.5 162.4 158 164 158 165.8 L 158 168.7 C 158 170.6 159.5 172.1 161.4 172.1 L 163.5 172.1;
-    M 242.2 155.7 C 242.2 155.7 242.2 155.7 242.2 155.7 C 251.9 155.7 259.7 147.8 259.7 138.1 C 259.7 131.8 259.7 125.5 259.7 119.2 L 259.7 100.3 C 259.7 90.6 251.9 82.7 242.2 82.7 L 225.1 82.7 C 215.4 82.8 207.6 90.6 207.6 100.3 L 207.6 138.1 C 207.6 147.8 215.4 155.7 225.1 155.7 L 242.2 155.7"
+    values="M 161.4 162.4 L 161.4 162.4 L 163.5 162.4 C 165.4 162.4 166.9 163.9 166.9 165.8 L 166.9 168.7 C 166.9 170.5 165.4 172.1 163.5 172.1 L 161.4 172.1 C 159.5 172.1 158 170.6 158 168.7 L 158 165.8 C 158 164 159.5 162.4 161.4 162.4;
+    M 224.2 82.7 L 224.2 82.7 L 243.1 82.7 C 248.3 82.7 259.7 88.3 259.7 99.3 L 259.7 139 C 259.7 148.1 250.6 155.6 243.1 155.6 L 224.2 155.6 C 215.5 155.6 207.6 147.9 207.6 139 L 207.6 99.3 C 207.6 90.6 216.1 82.7 224.2 82.7"
     begin="2.5s"
     dur="0.5s"
     fill="freeze"/>
