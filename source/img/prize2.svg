@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Generator: Adobe Illustrator 24.1.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 -40 319.8 316" enable-background="new 0 0 319.8 276" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 -40 325 316">
   <defs>
     <g id="cloudTwo">
       <path fill="#FFFFFF" d="M221.6,65h-19.4c-0.3-19.6-16.4-35.2-36-35c-13.9,0.2-26.4,8.5-32,21.3c-3.9-2.2-8.4-3.3-12.9-3.3c-11,0-20.8,6.8-24.8,17H81.4c-5.8,0-10.5,4.7-10.5,10.5c0,5.8,4.7,10.5,10.5,10.5h140.3c5.8,0,10.5-4.7,10.5-10.5C232.1,69.7,227.4,65,221.6,65L221.6,65"/>
@@ -9,41 +9,126 @@
     </g>
   </defs>
   <g>
-    <set id="delay" attributeType="CSS" attributeName="visibility" to="hidden" dur="3.6s"/>
+    <set id="delay"
+      attributeType="CSS"
+      attributeName="visibility"
+      to="hidden"
+      dur="3.6s"
+      />
+
     <g id="cloudOne">
-      <animateTransform attributeName="transform" type="translate" values="40 0; 0 0;  0 0;  0 -40;" calcMode="spline" begin="delay.end" dur="1.367s" keyValues="0; 0.29; 0.73; 1" keySplines="0.33, 0, 0, 1;
-                  0.33, 0, 0, 1;
-                  1, 0, 0.83, 0.83" fill="freeze"/>
-      <animate attributeType="CSS" attributeName="opacity" begin="delay.end" values="0; 1; 1; 0" calcMode="spline" dur="1.367s" keyValues="0; 0.12; 0,73; 1" keySplines="0.33, 0, 0.67, 1;
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="40 0; 0 0; 0 0; 0 -40;"
+        calcMode="spline"
+        begin="delay.end"
+        dur="1.367s"
+        keyTimes="0; 0.29; 0.73; 1"
+        keySplines="0.33, 0, 0, 1;
+                    0.33, 0, 0, 1;
+                    1, 0, 0.83, 0.83"
+        fill="freeze"/>
+
+      <animate
+        attributeType="CSS"
+        attributeName="opacity"
+        begin="delay.end"
+        values="0; 1; 1; 0"
+        calcMode="spline"
+        dur="1.367s"
+        keyTimes="0; 0.12; 0,73; 1"
+        keySplines="0.33, 0, 0.67, 1;
                   0.33, 0, 0.67, 1;
-                  1, 0, 0.83, 0.83" fill="freeze"/>
+                  1, 0, 0.83, 0.83"
+        fill="freeze"/>
+
       <line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="51.3" y1="23.7" x2="91.1" y2="23.7"/>
       <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M71.1,13.4H43.7C43.7,6.6,38.2,1,31.3,1c-6.8,0-12.4,5.5-12.4,12.4c0,0,0,0,0,0H1"/>
       <line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="79.3" y1="13.4" x2="101.6" y2="13.4"/>
     </g>
+
     <use href="#cloudTwo" style="opacity:0">
-      <animateTransform attributeName="transform" type="translate" values="0, 0; 0, -80" begin="delay.end + 1s" dur="0.367s" fill="freeze"/>
-      <animate attrubuteType="CSS" attributeName="opacity" values="1; 0" begin="delay.end + 1s" dur="0.367s" calcMode="spline" keySplines="1, 0, 0.83, 0.83" fill="freeze"/>
-      <set attrubuteType="CSS" attributeName="opacity" begin="delay.end + 0.64s" to="1"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0, 0; 0, -80"
+        begin="delay.end + 1s"
+        dur="0.367s"
+        fill="freeze"/>
+
+      <animate
+      attrubuteType="CSS"
+      attributeName="opacity"
+      values="1; 0"
+      begin="delay.end + 1s"
+      dur="0.367s"
+      calcMode="spline"
+      keySplines="1, 0, 0.83, 0.83"
+      fill="freeze"/>
+
+      <set
+      attrubuteType="CSS"
+      attributeName="opacity"
+      begin="delay.end + 0.64s"
+      to="1"/>
     </use>
+
     <g id="leafTwo">
       <path fill="#E81A5A" d="M249.3,152.8c0.9-0.7,2.1-0.5,2.8,0.4c0.3,0.5,0.5,1,0.4,1.6c-1,7-2.1,20.3,4.9,19.4c4.9-0.7-16.6-31.5,19.3-38.2c1.1-0.2,2.1,0.5,2.4,1.6c0.1,0.5,0,0.9-0.2,1.3c-1.3,2.7-2.8,6.6-2.7,9.9c0,1.1,0.9,2,2,2c0.7,0,1.3-0.4,1.7-1c4.1-6.1,15.1-17.9,36.6-10.7c0.7,0.2,1.2,0.8,1.4,1.5c0.9,4.8,4.1,23.2-0.3,28.7c-5.1,6.3-15,4.1-16.2,10.2c-1.3,6.9,7.5,4.8,13.4-0.2c0.8-0.7,2.1-0.7,2.8,0.2c0.4,0.4,0.5,0.9,0.5,1.5c-0.2,5.4-2.2,14-11.1,18.7c-13.8,7.2-23.5-7-25.2-3.9c-2.6,4.7,7.9,8.5,13.8,10.2c1.1,0.3,1.7,1.4,1.4,2.4c-0.1,0.5-0.4,0.9-0.8,1.1c-10.5,7.7-29.1,10.3-37-5.4c-8.3-16.6-12.9-12.5-18.2-20.4C235.2,175.3,236.6,161.3,249.3,152.8 M278.7,185.3c0.5,2.7,5.2,3.5,8.4,2.9s8.5-3.8,8-6.6s-6.6-3.9-9.8-3.3S278.2,182.5,278.7,185.3">
-        <animateTransform attributeName="transform" type="rotate" values="-3 253 195; 4 253 195; -3 253 195;" begin="delay.end" dur="1.407s" calcMode="spline" keySplines="0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1" repeatCount="indefinite"/>
+
+        <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-3 253 195; 4 253 195; -3 253 195;"
+        begin="delay.end"
+        dur="1.407s"
+        calcMode="spline"
+        keySplines="0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
+        repeatCount="indefinite"/>
+
       </path>
-      <path fill="none" stroke="#E81A5A" stroke-width="2" stroke-miterlimit="10" d="M248.9,273.9c0,0-4.9-70.3,5.5-80.7"/>
+      <path fill="none" stroke="#E81A5A" stroke-width="2" stroke-miterlimit="10"
+      d="M248.9,273.9c0,0-4.9-70.3,5.5-80.7"/>
     </g>
+
     <g>
-      <animateMotion path="M164.5,58.1c24.2-9.2,29.8-15.8,29.4-20.4c-1.2-15.1-69.7-38.8-112.4-6.6c-2.9,2.2-31.7,24.5-29,54c3.5,39.2,59.8,61.1,75.7,67.4c53.7,20.9,94.4,8.8,101.8,27.2c2.9,7.2,0.8,19.7-21.5,42.5" begin="delay.end" dur="1739ms" fill="freeze"/>
+      <animateMotion
+      path="M164.5,58.1c24.2-9.2,29.8-15.8,29.4-20.4c-1.2-15.1-69.7-38.8-112.4-6.6c-2.9,2.2-31.7,24.5-29,54c3.5,39.2,59.8,61.1,75.7,67.4c53.7,20.9,94.4,8.8,101.8,27.2c2.9,7.2,0.8,19.7-21.5,42.5"
+      begin="delay.end"
+      dur="1739ms"
+      fill="freeze"/>
+
       <g id="prize">
-        <animateTransform attributeName="transform" type="scale" calcMode="spline" values="0; 0.16; 0.5; 1" keyValues="0; 0,162; 0.65; 1" keySplines="0.77, 0, 0.67, 1;
+        <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="0; 0.16; 0.5; 1"
+        keyTimes="0; 0.162; 0.65; 1"
+        calcMode="spline"
+        keySplines="0.77, 0, 0.67, 1;
                     0.75, 0, 0.67, 1;
-                    0.33, 0, 0.67, 1" begin="delay.end" dur="1.433s"/>
-        <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="30; 30; -30; 20; 18.3; -6.5; 0" keyValues="0.145; 0.395; 0.625; 0.728; 0.936; 1" keySplines="0.33, 0, 0.67, 1;
+                    0.33, 0, 0.67, 1"
+        begin="delay.end"
+        dur="1433ms"/>
+
+        <animateTransform
+        attributeName="transform"
+        type="rotate"
+        calcMode="spline"
+        values="30; 30; -30; 20; 18.3; -6.5; 0"
+        keyTimes="0; 0.145; 0.395; 0.625; 0.728; 0.93; 1"
+        keySplines="0.33, 0, 0.67, 1;
                     0.33, 0, 0.67, 1;
                     0.33, 0, 0.67, 1;
                     0.33, 0, 0.67, 1;
                     0.33, 0, 0.67, 1;
-                    0.17, 0, 0.83, 1" begin="delay.end" dur="1.6s" additive="sum" fill="freeze"/>
+                    0.17, 0, 0.83, 1"
+        begin="delay.end"
+        dur="1567ms"
+        additive="sum"/>
+
         <g id="suitcase">
           <path fill="#A67EE5" d="M29.6,52.8c1.9,0,3.5-1.6,3.5-3.5v-5.1c0-1.9-1.6-3.5-3.5-3.5c-1.9,0-3.5,1.6-3.5,3.5c0,0,0,0,0,0v5.1C26,51.2,27.6,52.8,29.6,52.8"/>
           <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M29.6,52.8c1.9,0,3.5-1.6,3.5-3.5v-5.1c0-1.9-1.6-3.5-3.5-3.5c-1.9,0-3.5,1.6-3.5,3.5c0,0,0,0,0,0v5.1C26,51.2,27.6,52.8,29.6,52.8z"/>
@@ -73,28 +158,67 @@
         </g>
       </g>
     </g>
+
     <use href="#cloudTwo">
-      <animateTransform attributeName="transform" type="translate" values="90; 0" begin="delay.end" dur="0.4s" fill="freeze"/>
-      <animate attrubuteType="CSS" attributeName="opacity" values="0; 1" begin="delay.end" dur="0.167s" calcMode="spline" keySplines="0.33, 0, 0.67, 1"/>
-      <set attrubuteType="CSS" attributeName="opacity" begin="delay.end + 0.64s" to="0"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="90; 0"
+        begin="delay.end"
+        dur="0.4s"
+        fill="freeze"/>
+
+      <animate
+        attrubuteType="CSS"
+        attributeName="opacity"
+        values="0; 1"
+        begin="delay.end"
+        dur="0.167s"
+        calcMode="spline"
+        keySplines="0.33, 0, 0.67, 1"/>
+
+      <set
+        attrubuteType="CSS"
+        attributeName="opacity"
+        begin="delay.end + 0.64s"
+        to="0"/>
     </use>
+
     <g id="leafOne">
-      <animateTransform attributeName="transform" type="rotate" values="6 230 274;
-              -4 230 274;
-              1 230 274;
-              -0.5 230 274;
-              0 230 274;
-              6 230 274" calcMode="spline" begin="delay.end" dur="2.3s" keySplines="0.33, 0, 0.67, 1;
-                  0.33, 0, 0.67, 1;
-                  0.33, 0, 0.67, 1;
-                  0.33, 0, 0.67, 1;
-                  0.33, 0, 0.67, 1;" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="6 230 274;
+                -4 230 274;
+                1 230 274;
+                -0.5 230 274;
+                0 230 274;
+                6 230 274"
+        calcMode="spline"
+        begin="delay.end"
+        dur="2.3s"
+        keySplines="0.33, 0, 0.67, 1;
+                    0.33, 0, 0.67, 1;
+                    0.33, 0, 0.67, 1;
+                    0.33, 0, 0.67, 1;
+                    0.33, 0, 0.67, 1;"
+        repeatCount="indefinite"/>
+
       <path fill="#FE6183" d="M308.8,229.4c0.6,0.6,0.8,1.4,0.5,2.2c-1.1,3.4-4.6,12.9-12.1,16.3c-5.1,2.4-8.3-2.7-10.9,0.8s2.1,5,6.9,4.3c1.2-0.2,2.3,0.6,2.5,1.8c0.1,0.5,0,1.1-0.3,1.6c-2.6,4-7,6.5-11.7,6.7c-10.8,0.3-12.5-11.6-14.6-10.2c-2.7,1.9,1.3,6.5,4.4,9.6c0.9,0.8,0.9,2.2,0.1,3.1c-0.4,0.4-0.8,0.6-1.4,0.7c-8.8,0.8-19.7-3.5-19.8-15c-0.1-12.9-4.2-11.8-5.1-18.4c-0.9-6.9,3.9-14.9,13.7-16.7c1.2-0.2,2.3,0.6,2.5,1.7c0.1,0.5,0,0.9-0.2,1.4c-2.4,4.7-6,12.6-2.8,12.6c3.5,0-1.6-22.6,28.4-15.3c1.2,0.3,1.9,1.5,1.6,2.6c-0.1,0.3-0.3,0.7-0.5,0.9l-0.1,0.1c-0.8,0.9-0.7,2.3,0.2,3.1c0.6,0.6,1.5,0.7,2.3,0.4C296,222,301.5,222.3,308.8,229.4"/>
-      <path fill="none" stroke="#FE6183" stroke-width="2" stroke-miterlimit="10" d="M231,273.9c0,0,3.5-30.1,21.7-30.1"/>
+
+      <path fill="none" stroke="#FE6183" stroke-width="2" stroke-miterlimit="10"
+      d="M231,273.9c0,0,3.5-30.1,21.7-30.1"/>
     </g>
+
     <g id="ground">
       <line id="ground" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="243 243" stroke-dashoffset="243" x1="27" y1="275" x2="270" y2="275">
-        <animate attributeName="stroke-dashoffset" to="-105" begin="delay.end" dur="0.48s" fill="freeze"/>
+
+        <animate
+          attributeName="stroke-dashoffset"
+          to="-105"
+          begin="delay.end"
+          dur="0.48s"
+          fill="freeze"/>
       </line>
     </g>
   </g>
