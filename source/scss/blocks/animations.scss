@@ -111,6 +111,16 @@
   }
 }
 
+@keyframes additional-prize-in {
+  0% {
+    transform: translate(4rem);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
 @keyframes prize-icon-in {
   0% {
     opacity: 0;
