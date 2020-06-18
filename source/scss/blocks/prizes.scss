@@ -176,9 +176,8 @@
     .prizes__icon {
       width: 31.8rem;
       margin-left: -7em;
-      animation-name: prize-icon-in;
       animation-delay: 3600ms;
-      animation-duration: 367ms;
+
 
       @media (min-width: $stop-scaling) {
         width: 188px;
@@ -202,7 +201,10 @@
   }
 
   &--codes {
-    visibility: hidden;
+    animation-name: additional-prize-in;
+    animation-duration: 400ms;
+    animation-fill-mode: both;
+    animation-delay: 6170ms;
 
     @media (max-width: $tablet) and (orientation: portrait) {
       padding-left: 0.8rem;
@@ -211,6 +213,7 @@
 
     .prizes__icon {
       width: 26rem;
+      animation-delay: 6170ms;
 
       @media (min-width: $stop-scaling) {
         width: 260px;
@@ -290,6 +293,10 @@
       animation-delay: 5000ms;
     }
 
+    .prizes__item--codes & {
+      animation-delay: 6170ms;
+    }
+
     @media (min-width: $stop-scaling) {
       font-size: 120px;
     }
@@ -320,6 +327,10 @@
 
     .prizes__item--cases & {
       animation-delay: 5000ms;
+    }
+
+    .prizes__item--codes & {
+      animation-delay: 6170ms;
     }
 
     @media (min-width: $stop-scaling) {
