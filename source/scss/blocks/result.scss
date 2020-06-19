@@ -54,9 +54,35 @@
   }
 }
 
+@keyframes result-title-in {
+  0% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes result-text-in {
+  0% {
+    transform: scale(1.06);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .result__title {
   margin: 0 auto 2rem;
   color: $c-light;
+
+  animation-name: result-title-in;
+  animation-duration: 767ms;
+  animation-timing-function: cubic-bezier(0.21, 0, 0, 1);
 
   @media (min-width: $stop-scaling) {
     margin: 0 auto 20px;
@@ -83,6 +109,10 @@
   font-size: 4.8rem;
   line-height: 0.906;
   letter-spacing: -0.01em;
+
+  animation-name: result-text-in;
+  animation-duration: 767ms;
+  animation-timing-function: cubic-bezier(0.21, 0, 0, 1);
 
   @media (min-width: $stop-scaling) {
     margin-bottom: 20px;

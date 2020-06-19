@@ -152,3 +152,25 @@
     transform: translateX(0);
   }
 }
+
+@keyframes result-title-in {
+  0% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes result-text-in {
+  0% {
+    transform: scale(1.06);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
