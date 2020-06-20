@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 212">
+  <g id="lose" style="color: #ffffff"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M13.9,90.5V57.1h37.2v33.4h13.4v-84H51.1v34.2H13.9V6.5H0.5v84H13.9"
+    >
+      <animate
+        attributeName="stroke-dasharray"
+        dur="432ms"
+        fill="freeze"
+        values="0 200; 200 0"
+        caclMode="spline"
+        keySplines="0.21, 0, 0.8, 1"
+      />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0 99;  0 94; 0 99"
+        begin="0"
+        dur="778ms"
+        keyTimes="0; 0.67; 0.83; 1"
+        calcMode="spline"
+        keySplines="0.88, 0, 1, 1; 0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
+        fill="freeze"
+      />
+    </path>
+
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M81.4,6.5v84h64.1V74.1H94.8V56.5h33.6V40.1H94.8V22.9h50.6V6.5H81.4"
+    >
+      <animate
+        attributeName="stroke-dasharray"
+        dur="432ms"
+        fill="freeze"
+        values="0 200; 200 0"
+        caclMode="spline"
+        keySplines="0.21, 0, 0.8, 1"
+      />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0 99;  0 94; 0 99"
+        begin="33ms"
+        dur="778ms"
+        keyTimes="0; 0.67; 0.83; 1"
+        calcMode="spline"
+        keySplines="0.88, 0, 1, 1; 0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
+        fill="freeze"
+      />
+    </path>
+
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M183.6,6.5l28.1,58.1l-9.5,25.9h16.4l31-84h-16.4l-15.6,42.4L197.1,6.5H183.6"
+    >
+      <animate
+        attributeName="stroke-dasharray"
+        dur="432ms"
+        fill="freeze"
+        values="0 200; 200 0"
+        caclMode="spline"
+        keySplines="0.21, 0, 0.8, 1"
+      />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0 99;  0 94; 0 99"
+        begin="66ms"
+        dur="778ms"
+        keyTimes="0; 0.67; 0.83; 1"
+        calcMode="spline"
+        keySplines="0.88, 0, 1, 1; 0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
+        fill="freeze"
+      />
+    </path>
+
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M308.3,22.9V6.5h-50.2v84h13.4V22.9H308.3"
+    >
+      <animate
+        attributeName="stroke-dasharray"
+        dur="432ms"
+        fill="freeze"
+        values="0 200; 200 0"
+        caclMode="spline"
+        keySplines="0.21, 0, 0.8, 1"
+      />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0 99; 0 94; 0 99"
+        begin="99ms"
+        dur="778ms"
+        keyTimes="0; 0.67; 0.83; 1"
+        calcMode="spline"
+        keySplines="0.88, 0, 1, 1; 0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
+        fill="freeze"
+      />
+    </path>
+
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M321.3,90.5L329,67h37.8l7.8,23.5h13.5l-28.1-84h-27.1l-28,84H321.3 M334.7,50.5l13.4-40.2l13.4,40.2H334.7"
+    >
+      <animate
+        attributeName="stroke-dasharray"
+        dur="432ms"
+        fill="freeze"
+        values="0 200; 200 0"
+        caclMode="spline"
+        keySplines="0.21, 0, 0.8, 1"
+      />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0 99; 0 94; 0 99;"
+        begin="133ms"
+        dur="778ms"
+        keyTimes="0; 0.67; 0.83; 1"
+        calcMode="spline"
+        keySplines="0.88, 0, 1, 1; 0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
+        fill="freeze"
+      />
+    </path>
+
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M408.8,108.7V90.5h45.9v18.2h14.7V74.1h-10V6.5h-48.6l-0.4,11.6c-1,37.6-4.2,51.3-8.8,56h-7.4v34.7H408.8 M416.2,74.1c4-10.3,6.7-25.6,7.2-48v-3.1h22.6v51.1H416.2"
+    >
+      <animate
+        attributeName="stroke-dasharray"
+        dur="432ms"
+        fill="freeze"
+        values="0 200; 200 0"
+        caclMode="spline"
+        keySplines="0.21, 0, 0.8, 1"
+      />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0 99;  0 94; 0 99"
+        begin="166ms"
+        dur="778ms"
+        keyTimes="0; 0.67; 0.83; 1"
+        calcMode="spline"
+        keySplines="0.88, 0, 1, 1; 0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
+        fill="freeze"
+      />
+    </path>
+
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M491.9,90.5l7.8-23.5h37.8l7.8,23.5h13.4l-28-84h-27.1l-28,84H491.9 M505.3,50.5l13.4-40.2l13.4,40.2H505.3"
+    >
+      <animate
+        attributeName="stroke-dasharray"
+        dur="432ms"
+        fill="freeze"
+        values="0 200; 200 0"
+        caclMode="spline"
+        keySplines="0.21, 0, 0.8, 1"
+      />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0 99; 0 94; 0 99"
+        begin="233ms"
+        dur="778ms"
+        keyTimes="0; 0.67; 0.83; 1"
+        calcMode="spline"
+        keySplines="0.88, 0, 1, 1; 0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
+        fill="freeze"
+      />
+    </path>
+
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M564.9,92.1c2.2,0.5,4.5,0.8,6.7,0.8c15.3,0,23.4-13.4,25-66.8l0.1-3.1h20.2v67.6h13.4v-84h-46.2l-0.5,11.6c-1.6,52.1-5.4,58.3-12,58.3c-1.7,0-3.4-0.4-5-1L564.9,92.1"
+    >
+      <animate
+        attributeName="stroke-dasharray"
+        dur="432ms"
+        fill="freeze"
+        values="0 200; 200 0"
+        caclMode="spline"
+        keySplines="0.21, 0, 0.8, 1"
+      />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0 99;  0 94; 0 99;"
+        begin="366ms"
+        dur="778ms"
+        keyTimes="0; 0.67; 0.83; 1"
+        calcMode="spline"
+        keySplines="0.88, 0, 1, 1; 0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
+        fill="freeze"
+      />
+    </path>
+
+    <path
+      fill="none"
+      stroke="currentColor"
+      d="M660.3,68.9l-1.4-68.4h-13.5l-1.4,68.4H660.3 M644.1,83.4c0,4.4,3.6,8,8,8c4.4,0,8-3.6,8-8c0-4.9-3.2-8.2-8-8.2S644.2,78.5,644.1,83.4"
+    >
+      <animate
+        attributeName="stroke-dasharray"
+        dur="432ms"
+        fill="freeze"
+        values="0 200; 200 0"
+        caclMode="spline"
+        keySplines="0.21, 0, 0.8, 1"
+      />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0,0; 0 99;  0 94; 0 99;"
+        begin="500ms"
+        dur="778ms"
+        keyTimes="0; 0.67; 0.83; 1"
+        calcMode="spline"
+        keySplines="0.88, 0, 1, 1; 0.33, 0, 0.67, 1; 0.33, 0, 0.67, 1"
+        fill="freeze"
+      />
+    </path>
+  </g>
+</svg>

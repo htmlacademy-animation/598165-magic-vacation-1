@@ -33,24 +33,22 @@ export default () => {
 
   document.querySelector(`[data-target="result"]`)
     .addEventListener(`click`, () => {
-      restartSvg(document.querySelector(`#result svg`));
+      restartSvg(document.querySelector(`#result .result__title img`));
     });
 
   document.querySelector(`[data-target="result2"]`)
     .addEventListener(`click`, () => {
-      restartSvg(document.querySelector(`#result2 svg`));
+      restartSvg(document.querySelector(`#result2 .result__title img`));
+    });
+
+  document.querySelector(`[data-target="result3"]`)
+    .addEventListener(`click`, () => {
+      restartSvg(document.querySelector(`#result3 .result__title img`));
     });
 
 
   const restartSvg = (svg) => {
-    [
-      ...svg.querySelectorAll(`animate`),
-      ...svg.querySelectorAll(`animateTransform`),
-      ...svg.querySelectorAll(`animateMotion`),
-      ...svg.querySelectorAll(`set`)
-    ]
-      .forEach((animation) => animation.beginElement());
+    const originalSource = svg.src.split(`?`)[0];
+    svg.src = `${originalSource}?${new Date().getTime()}`;
   };
-
-
 };

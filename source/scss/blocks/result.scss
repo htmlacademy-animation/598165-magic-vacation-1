@@ -54,28 +54,6 @@
   }
 }
 
-@keyframes result-title-in {
-  0% {
-    transform: scale(1.15);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes result-text-in {
-  0% {
-    transform: scale(1.06);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
 .result__title {
   margin: 0 auto 2rem;
   color: $c-light;
@@ -92,7 +70,7 @@
     margin-bottom: 1.5rem;
   }
 
-  svg {
+  img {
     display: block;
     width: 100%;
     height: 100%;
@@ -272,9 +250,10 @@
 
 .result--negative {
   .result__title {
-    margin-top: 9.5rem;
+    // margin-top: 9.5rem;
     width: 66.5rem;
-    height: 11.3rem;
+    height: 21.3rem;
+    animation: none;
 
     @media (min-width: $stop-scaling) {
       margin-top: 95px;
