@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  // outline: 1px dotted rgba(0, 195, 255, 0.4);
 }
 
 .form__label {
@@ -59,7 +58,6 @@
   height: 6rem;
   padding: 0 5.6rem;
   transform-origin: 100%;
-  width: 100%;
   text-transform: uppercase;
   font: inherit;
   font-size: 2.4rem;
@@ -67,9 +65,19 @@
   color: $c-dark;
   border: 0;
   outline: none;
-  animation-name: form-field-in;
-  animation-duration: 0.35s;
-  animation-timing-function: ease;
+  margin-right: 3rem;
+  border-radius: 3rem;
+  width: calc(100% - 21rem);
+
+  .form__field-wrapper & {
+    width: 100%;
+    border-radius: 0;
+    margin-right: 0;
+
+    animation-name: form-field-in;
+    animation-duration: 0.35s;
+    animation-timing-function: ease;
+  }
 
   &:focus {
     border: 1px solid $c-purple;
@@ -89,7 +97,6 @@
     height: 4rem;
     font-size: 1.6rem;
   }
-
 
   @media (max-width: $mobile) and (orientation: landscape) {
     margin-right: 1rem;

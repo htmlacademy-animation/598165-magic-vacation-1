@@ -1,6 +1,7 @@
 export default () => {
   let showResultEls = document.querySelectorAll(`.js-show-result`);
   let results = document.querySelectorAll(`.screen--result`);
+
   if (results.length) {
     for (let i = 0; i < showResultEls.length; i++) {
       showResultEls[i].addEventListener(`click`, function () {
@@ -29,4 +30,25 @@ export default () => {
       });
     }
   }
+
+  document.querySelector(`[data-target="result"]`)
+    .addEventListener(`click`, () => {
+      restartSvg(document.querySelector(`#result .result__title img`));
+    });
+
+  document.querySelector(`[data-target="result2"]`)
+    .addEventListener(`click`, () => {
+      restartSvg(document.querySelector(`#result2 .result__title img`));
+    });
+
+  document.querySelector(`[data-target="result3"]`)
+    .addEventListener(`click`, () => {
+      restartSvg(document.querySelector(`#result3 .result__title img`));
+    });
+
+
+  const restartSvg = (svg) => {
+    const originalSource = svg.src.split(`?`)[0];
+    svg.src = `${originalSource}?${new Date().getTime()}`;
+  };
 };
