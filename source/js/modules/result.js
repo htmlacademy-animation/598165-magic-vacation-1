@@ -46,7 +46,6 @@ export default () => {
       restartSvg(document.querySelector(`#result3 .result__title img`));
     });
 
-
   const restartSvg = (svg) => {
     const originalSource = svg.src.split(`?`)[0];
     svg.src = `${originalSource}?${new Date().getTime()}`;
