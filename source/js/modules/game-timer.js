@@ -1,16 +1,16 @@
 const TIMER_TIME_STEP = 1000;
 
 export default class Timer {
-  constructor(element, totalDuration, cb = () => {}) {
+  constructor(element, totalDuration, callback = () => {}) {
     this._element = element;
     this._minutesElement = this._element.querySelectorAll(`span`)[0];
     this._secondsElement = this._element.querySelectorAll(`span`)[1];
     this._totalDuration = totalDuration;
-    this._cb = cb;
+    this._callback = callback;
 
     this._isStarted = false;
 
-    this._rAF = null;
+    this._requestId = null;
   }
 
   start() {
@@ -20,7 +20,7 @@ export default class Timer {
       let timerStepStart = countdownStarted;
 
       const tick = () => {
-        this._rAF = requestAnimationFrame(tick);
+        this._requestId = requestAnimationFrame(tick);
         const timerStepEnd = Date.now();
 
         if (timerStepEnd - timerStepStart > TIMER_TIME_STEP) {
@@ -29,17 +29,13 @@ export default class Timer {
           this._updateTimer(timeLeft);
           timerStepStart = timerStepEnd;
 
-          if (!timeLeft) {
+          if (timeLeft <= 0) {
             this._stopTimer();
           }
         }
       };
-      requestAnimationFrame(tick);
+      this._requestId = requestAnimationFrame(tick);
     }
-  }
-
-  cancel() {
-    this._stopTimer();
   }
 
   _updateTimer(timeLeft) {
@@ -57,10 +53,10 @@ export default class Timer {
   }
 
   _stopTimer() {
-    cancelAnimationFrame(this._rAF);
+    cancelAnimationFrame(this._requestId);
     this._isStarted = false;
     this._updateTimer(this._totalDuration);
-    this._cb();
+    this._callback();
   }
 
 }
